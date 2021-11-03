@@ -27,6 +27,10 @@ DATABASE_URI = environ['DATABASE_URI']
 DATABASE_NAME = environ['DATABASE_NAME']
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
+# Broadcast function variables.
+LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", True))
+
 # Messages
 default_start_msg = """
 **Hi, I'm Media Search Bot or ypu can call me as Auto-Filter Bot**
