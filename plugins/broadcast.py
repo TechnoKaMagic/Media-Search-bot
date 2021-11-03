@@ -61,7 +61,7 @@ async def broadcast_handler_open(_, m):
 
 @Client.on_message(filters.private & filters.command("stats"))
 async def sts(c, m):
-    if m.from_user.id not in AUTH_USERS:
+    if m.from_user.id not in info.ADMINS:
         await m.delete()
         return
     await m.reply_text(
