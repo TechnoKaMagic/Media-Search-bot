@@ -5,7 +5,7 @@ import datetime
 import info
 import logging
 
-from handlers.database import Database
+from db.database import Database
 
 DB_URL = info.DATABASE_URI
 DB_NAME = info.DATABASE_NAME
